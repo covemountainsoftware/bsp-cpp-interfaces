@@ -6,6 +6,9 @@ set(CMAKE_C_STANDARD 11)
 
 add_library(bsp-cpp-interfaces INTERFACE
         include/character_device.hpp
+        include/i2c_types.hpp
+        include/i2c_bus.hpp
+        include/i2c_device.hpp
 )
 
 target_include_directories(bsp-cpp-interfaces INTERFACE
