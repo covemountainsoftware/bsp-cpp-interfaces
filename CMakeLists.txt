@@ -11,3 +11,9 @@ add_library(bsp-cpp-interfaces INTERFACE
 target_include_directories(bsp-cpp-interfaces INTERFACE
         include/
 )
+
+add_library(bsp-cpp-interfaces-dummy___ STATIC
+        lib_dummy.cpp
+)
+
+target_link_libraries(bsp-cpp-interfaces-dummy___ bsp-cpp-interfaces)
