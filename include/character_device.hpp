@@ -3,9 +3,7 @@
 
 #include <cstdint>
 
-namespace cms {
-namespace bsp {
-namespace interfaces {
+namespace cms::bsp::interface {
 
 /**
  * Pure virtual interface for a 100% asynchronous character device.
@@ -42,8 +40,6 @@ public:
     virtual void RegisterNewByteCallback(NewByteCallback callback, void *userData) = 0;
 };
 
-} // namespace interfaces
-}
-} // namespace cms
+} // namespace cms::bsp::interface
 
 #endif //BSP_CPP_INTERFACES_CHARACTER_DEVICE_HPP
